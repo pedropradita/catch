@@ -46,7 +46,6 @@ public class AdminTest extends Base {
 
 	@AfterMethod
 	public void AfMet() {
-		driver.close();
 		driver.quit();
 	}
 
@@ -111,6 +110,25 @@ public class AdminTest extends Base {
 		np.tagsField().sendKeys(tag);
 		np.tagsField().sendKeys(Keys.ENTER);
 		js.executeScript("arguments[0].click();", np.createPostBtn());
+
+		String actual = a.messageAlert().getAttribute("textContent").trim().replace("\n", "");
+
+		Assert.assertTrue(he.checkAlert(desc, actual, expected));
+	}
+	
+	@Test(groups = "Regression")
+	public void successDeletePost() {
+
+		System.out.println("Case success delete post");
+
+		l.successLogin();
+
+		String desc = "Success delete Post";
+		String expected = "×                                        Post deleted successfully!";
+
+		a.editBtn().click();
+		a.deleteBtn().click();
+		a.yesBtn().click();
 
 		String actual = a.messageAlert().getAttribute("textContent").trim().replace("\n", "");
 

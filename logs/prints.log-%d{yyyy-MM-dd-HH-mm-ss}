@@ -1,3 +1,4 @@
-12:54:45.782 [TestNG] INFO  resources.Base - Verified 'Success Login'
-12:54:48.566 [TestNG] INFO  resources.Base - Success Create Post alert is verified '×                                        Post created successfully!'
-12:54:55.562 [TestNG] INFO  resources.Base - Success edit Post alert is verified '×                                        Post updated successfully!'
+13:21:31.937 [TestNG] INFO  resources.Base - Verified 'Success Login'
+13:21:34.234 [TestNG] INFO  resources.Base - Success Create Post alert is verified '×                                        Post created successfully!'
+13:21:41.309 [TestNG] INFO  resources.Base - Success delete Post alert is verified '×                                        Post deleted successfully!'
+13:21:48.403 [TestNG] INFO  resources.Base - Success edit Post alert is verified '×                                        Post updated successfully!'

@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <listeners>
     <listener class-name="script.Listeners"/>
   </listeners>
-  <test name="LoginPage(failed)" parallel="tests">
+  <test name="AdminPage(failed)" parallel="methods">
     <classes>
       <class name="script.LoginTest">
         <methods>
-          <include name="BefMet"/>
-          <include name="successLogin"/>
-        </methods>
-      </class> <!-- script.LoginTest -->
-      <class name="script.AdminTest">
-        <methods>
-          <include name="BefMet"/>
-        </methods>
-      </class> <!-- script.AdminTest -->
-    </classes>
-  </test> <!-- LoginPage(failed) -->
-  <test name="AdminPage(failed)" parallel="tests">
-    <classes>
-      <class name="script.LoginTest">
-        <methods>
+          <include name="AfMet"/>
           <include name="BefMet"/>
         </methods>
       </class> <!-- script.LoginTest -->
@@ -30,6 +16,7 @@
         <methods>
           <include name="successEditPost"/>
           <include name="BefMet"/>
+          <include name="successDeletePost"/>
           <include name="successCreatePost"/>
         </methods>
       </class> <!-- script.AdminTest -->
