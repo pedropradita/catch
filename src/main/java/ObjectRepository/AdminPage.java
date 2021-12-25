@@ -21,6 +21,8 @@ public class AdminPage {
 	WebElement userBtn;
 	@FindBy(css = "a[href*='new']")
 	WebElement createNewPostBtn;
+	@FindBy(xpath = "//tbody//a[contains(@href, 'edit')]")
+	WebElement editBtn;
 	@FindBy(css = "div[role='alert']")
 	WebElement messageAlert;	
 	
@@ -30,6 +32,10 @@ public class AdminPage {
 	
 	public WebElement createNewPostBtn() {
 		return createNewPostBtn;
+	}
+	
+	public WebElement editBtn() {
+		return editBtn;
 	}
 	
 	public WebElement messageAlert() {
