@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5715" started-at="2021-12-25T04:21:36Z" finished-at="2021-12-25T04:21:42Z">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest.successLogin()[pri:0, instance:script.LoginTest@333d4a8c]" name="successLogin" class="script.LoginTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Test" duration-ms="5715" started-at="2021-12-25T04:21:36Z" finished-at="2021-12-25T04:21:42Z">
+      <class name="script.LoginTest">
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.LoginTest@333d4a8c]" name="BefMet" is-config="true" duration-ms="3261" started-at="2021-12-25T11:21:36Z" finished-at="2021-12-25T11:21:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefMet -->
+        <test-method status="PASS" signature="successLogin()[pri:0, instance:script.LoginTest@333d4a8c]" name="successLogin" duration-ms="1694" started-at="2021-12-25T11:21:39Z" finished-at="2021-12-25T11:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successLogin -->
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.LoginTest@333d4a8c]" name="AfMet" is-config="true" duration-ms="647" started-at="2021-12-25T11:21:41Z" finished-at="2021-12-25T11:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfMet -->
+      </class> <!-- script.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
