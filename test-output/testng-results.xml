@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5715" started-at="2021-12-25T04:21:36Z" finished-at="2021-12-25T04:21:42Z">
+  <suite name="Suite" duration-ms="17344" started-at="2021-12-25T04:51:30Z" finished-at="2021-12-25T04:51:47Z">
     <groups>
       <group name="Regression">
-        <method signature="LoginTest.successLogin()[pri:0, instance:script.LoginTest@333d4a8c]" name="successLogin" class="script.LoginTest"/>
+        <method signature="LoginTest.successLogin()[pri:0, instance:script.LoginTest@6e2829c7]" name="successLogin" class="script.LoginTest"/>
+        <method signature="AdminTest.successCreatePost()[pri:0, instance:script.AdminTest@821330f]" name="successCreatePost" class="script.AdminTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Test" duration-ms="5715" started-at="2021-12-25T04:21:36Z" finished-at="2021-12-25T04:21:42Z">
+    <test name="LoginPage" duration-ms="9864" started-at="2021-12-25T04:51:30Z" finished-at="2021-12-25T04:51:40Z">
       <class name="script.LoginTest">
-        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.LoginTest@333d4a8c]" name="BefMet" is-config="true" duration-ms="3261" started-at="2021-12-25T11:21:36Z" finished-at="2021-12-25T11:21:39Z">
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.LoginTest@6e2829c7]" name="BefMet" is-config="true" duration-ms="3285" started-at="2021-12-25T11:51:30Z" finished-at="2021-12-25T11:51:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BefMet -->
-        <test-method status="PASS" signature="successLogin()[pri:0, instance:script.LoginTest@333d4a8c]" name="successLogin" duration-ms="1694" started-at="2021-12-25T11:21:39Z" finished-at="2021-12-25T11:21:41Z">
+        <test-method status="PASS" signature="successLogin()[pri:0, instance:script.LoginTest@6e2829c7]" name="successLogin" duration-ms="1723" started-at="2021-12-25T11:51:33Z" finished-at="2021-12-25T11:51:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successLogin -->
-        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.LoginTest@333d4a8c]" name="AfMet" is-config="true" duration-ms="647" started-at="2021-12-25T11:21:41Z" finished-at="2021-12-25T11:21:42Z">
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.LoginTest@6e2829c7]" name="AfMet" is-config="true" duration-ms="4731" started-at="2021-12-25T11:51:35Z" finished-at="2021-12-25T11:51:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfMet -->
       </class> <!-- script.LoginTest -->
-    </test> <!-- Test -->
+    </test> <!-- LoginPage -->
+    <test name="AdminPage" duration-ms="7220" started-at="2021-12-25T04:51:40Z" finished-at="2021-12-25T04:51:47Z">
+      <class name="script.AdminTest">
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.AdminTest@821330f]" name="BefMet" is-config="true" duration-ms="2426" started-at="2021-12-25T11:51:40Z" finished-at="2021-12-25T11:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefMet -->
+        <test-method status="PASS" signature="successCreatePost()[pri:0, instance:script.AdminTest@821330f]" name="successCreatePost" duration-ms="4043" started-at="2021-12-25T11:51:43Z" finished-at="2021-12-25T11:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successCreatePost -->
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.AdminTest@821330f]" name="AfMet" is-config="true" duration-ms="638" started-at="2021-12-25T11:51:47Z" finished-at="2021-12-25T11:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfMet -->
+      </class> <!-- script.AdminTest -->
+    </test> <!-- AdminPage -->
   </suite> <!-- Suite -->
 </testng-results>

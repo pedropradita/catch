@@ -37,4 +37,15 @@ public class LoginPage {
 	public WebElement signInBtn() {
 		return signInBtn;
 	}
+	
+	public void successLogin() {
+		String userName = "jane_admin";
+		String pass = "kitten";
+
+		userNameField().clear();
+		userNameField().sendKeys(userName);
+		passwordField().clear();
+		passwordField().sendKeys(pass);
+		signInBtn().click();
+	}
 }
