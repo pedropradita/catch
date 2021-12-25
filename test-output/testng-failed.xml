@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="script.Listeners"/>
   </listeners>
-  <test name="Test(failed)" parallel="tests">
+  <test name="LoginPage(failed)" parallel="tests">
     <classes>
       <class name="script.LoginTest">
         <methods>
@@ -12,6 +12,27 @@
           <include name="successLogin"/>
         </methods>
       </class> <!-- script.LoginTest -->
+      <class name="script.AdminTest">
+        <methods>
+          <include name="BefMet"/>
+        </methods>
+      </class> <!-- script.AdminTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- LoginPage(failed) -->
+  <test name="AdminPage(failed)" parallel="tests">
+    <classes>
+      <class name="script.LoginTest">
+        <methods>
+          <include name="BefMet"/>
+        </methods>
+      </class> <!-- script.LoginTest -->
+      <class name="script.AdminTest">
+        <methods>
+          <include name="successEditPost"/>
+          <include name="BefMet"/>
+          <include name="successCreatePost"/>
+        </methods>
+      </class> <!-- script.AdminTest -->
+    </classes>
+  </test> <!-- AdminPage(failed) -->
 </suite> <!-- Failed suite [Suite] -->

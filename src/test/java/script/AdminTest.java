@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -74,6 +75,41 @@ public class AdminTest extends Base {
 		np.publishedAtField().sendKeys(date + "T" + time);
 		np.tagsField().sendKeys(tag);
 		np.suggestBtn().click();
+		js.executeScript("arguments[0].click();", np.createPostBtn());
+
+		String actual = a.messageAlert().getAttribute("textContent").trim().replace("\n", "");
+
+		Assert.assertTrue(he.checkAlert(desc, actual, expected));
+	}
+	
+	@Test(groups = "Regression")
+	public void successEditPost() {
+
+		System.out.println("Case success edit post");
+
+		l.successLogin();
+
+		String desc = "Success edit Post";
+		String dTN = he.getCurrentDateTime("YYYY-MM-dd HH:mm:ss");
+		String title = "edit " + dTN;
+		String summary = "edit " + dTN;
+		String content = "edit " + dTN;
+		String date = he.getCurrentDate("YYYY-MM-dd");
+		String time = he.getCurrentTime("HH:mm:ss");
+		String tag = "edit";
+		String expected = "×                                        Post updated successfully!";
+
+		a.editBtn().click();
+		np.titleField().clear();
+		np.titleField().sendKeys(title);
+		np.summaryField().clear();
+		np.summaryField().sendKeys(summary);
+		np.contentField().clear();
+		np.contentField().sendKeys(content);
+		np.publishedAtField().clear();
+		np.publishedAtField().sendKeys(date + "T" + time);
+		np.tagsField().sendKeys(tag);
+		np.tagsField().sendKeys(Keys.ENTER);
 		js.executeScript("arguments[0].click();", np.createPostBtn());
 
 		String actual = a.messageAlert().getAttribute("textContent").trim().replace("\n", "");
