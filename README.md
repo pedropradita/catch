@@ -32,11 +32,14 @@
 
 ## Run automation in command prompt
 ```
-1. Clone
-2. Open command prompt
-3. Cd to folder
-4. Run in headless use this : mvn test -PRegression -Dbrowser=chromeheadless
-5. Run in browser user this : mvn test -PRegression -Dbrowser=chrome
+1. Open command prompt
+2. Cd to folder symfony project
+3. Run symfony serve
+4. Clone automation repository
+5. Open command prompt
+6. Cd to folder automation
+7. Run in headless use this : mvn test -PRegression -Dbrowser=chromeheadless
+8. Run in browser user this : mvn test -PRegression -Dbrowser=chrome
 ```
 
 ## How to check report HTML
