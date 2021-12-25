@@ -1,54 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18224" started-at="2021-12-25T05:54:38Z" finished-at="2021-12-25T05:54:56Z">
+  <suite name="Suite" duration-ms="25262" started-at="2021-12-25T06:21:23Z" finished-at="2021-12-25T06:21:49Z">
     <groups>
       <group name="Regression">
         <method signature="LoginTest.successLogin()[pri:0, instance:script.LoginTest@14fc5f04]" name="successLogin" class="script.LoginTest"/>
         <method signature="AdminTest.successCreatePost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successCreatePost" class="script.AdminTest"/>
+        <method signature="AdminTest.successDeletePost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successDeletePost" class="script.AdminTest"/>
         <method signature="AdminTest.successEditPost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successEditPost" class="script.AdminTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="LoginPage" duration-ms="8481" started-at="2021-12-25T05:54:38Z" finished-at="2021-12-25T05:54:46Z">
+    <test name="LoginPage" duration-ms="8808" started-at="2021-12-25T06:21:23Z" finished-at="2021-12-25T06:21:32Z">
       <class name="script.LoginTest">
-        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.LoginTest@14fc5f04]" name="BefMet" is-config="true" duration-ms="4564" started-at="2021-12-25T12:54:38Z" finished-at="2021-12-25T12:54:42Z">
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.LoginTest@14fc5f04]" name="BefMet" is-config="true" duration-ms="4960" started-at="2021-12-25T13:21:23Z" finished-at="2021-12-25T13:21:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BefMet -->
-        <test-method status="PASS" signature="successLogin()[pri:0, instance:script.LoginTest@14fc5f04]" name="successLogin" duration-ms="3119" started-at="2021-12-25T12:54:42Z" finished-at="2021-12-25T12:54:45Z">
+        <test-method status="PASS" signature="successLogin()[pri:0, instance:script.LoginTest@14fc5f04]" name="successLogin" duration-ms="3065" started-at="2021-12-25T13:21:28Z" finished-at="2021-12-25T13:21:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successLogin -->
-        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.LoginTest@14fc5f04]" name="AfMet" is-config="true" duration-ms="665" started-at="2021-12-25T12:54:45Z" finished-at="2021-12-25T12:54:46Z">
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.LoginTest@14fc5f04]" name="AfMet" is-config="true" duration-ms="627" started-at="2021-12-25T13:21:32Z" finished-at="2021-12-25T13:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfMet -->
       </class> <!-- script.LoginTest -->
     </test> <!-- LoginPage -->
-    <test name="AdminPage" duration-ms="18224" started-at="2021-12-25T05:54:38Z" finished-at="2021-12-25T05:54:56Z">
+    <test name="AdminPage" duration-ms="25262" started-at="2021-12-25T06:21:23Z" finished-at="2021-12-25T06:21:49Z">
       <class name="script.AdminTest">
-        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="BefMet" is-config="true" duration-ms="5015" started-at="2021-12-25T12:54:38Z" finished-at="2021-12-25T12:54:43Z">
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="BefMet" is-config="true" duration-ms="4547" started-at="2021-12-25T13:21:23Z" finished-at="2021-12-25T13:21:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BefMet -->
-        <test-method status="PASS" signature="successCreatePost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successCreatePost" duration-ms="5448" started-at="2021-12-25T12:54:43Z" finished-at="2021-12-25T12:54:48Z">
+        <test-method status="PASS" signature="successCreatePost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successCreatePost" duration-ms="5769" started-at="2021-12-25T13:21:28Z" finished-at="2021-12-25T13:21:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successCreatePost -->
-        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="AfMet" is-config="true" duration-ms="665" started-at="2021-12-25T12:54:48Z" finished-at="2021-12-25T12:54:49Z">
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="AfMet" is-config="true" duration-ms="645" started-at="2021-12-25T13:21:34Z" finished-at="2021-12-25T13:21:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfMet -->
-        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="BefMet" is-config="true" duration-ms="2326" started-at="2021-12-25T12:54:49Z" finished-at="2021-12-25T12:54:51Z">
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="BefMet" is-config="true" duration-ms="2419" started-at="2021-12-25T13:21:34Z" finished-at="2021-12-25T13:21:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BefMet -->
-        <test-method status="PASS" signature="successEditPost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successEditPost" duration-ms="3901" started-at="2021-12-25T12:54:51Z" finished-at="2021-12-25T12:54:55Z">
+        <test-method status="PASS" signature="successDeletePost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successDeletePost" duration-ms="3910" started-at="2021-12-25T13:21:37Z" finished-at="2021-12-25T13:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successDeletePost -->
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="AfMet" is-config="true" duration-ms="665" started-at="2021-12-25T13:21:41Z" finished-at="2021-12-25T13:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfMet -->
+        <test-method status="PASS" signature="BefMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="BefMet" is-config="true" duration-ms="2362" started-at="2021-12-25T13:21:42Z" finished-at="2021-12-25T13:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BefMet -->
+        <test-method status="PASS" signature="successEditPost()[pri:0, instance:script.AdminTest@1b1cfb87]" name="successEditPost" duration-ms="3982" started-at="2021-12-25T13:21:44Z" finished-at="2021-12-25T13:21:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successEditPost -->
-        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="AfMet" is-config="true" duration-ms="653" started-at="2021-12-25T12:54:55Z" finished-at="2021-12-25T12:54:56Z">
+        <test-method status="PASS" signature="AfMet()[pri:0, instance:script.AdminTest@1b1cfb87]" name="AfMet" is-config="true" duration-ms="653" started-at="2021-12-25T13:21:48Z" finished-at="2021-12-25T13:21:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfMet -->

@@ -23,6 +23,10 @@ public class AdminPage {
 	WebElement createNewPostBtn;
 	@FindBy(xpath = "//tbody//a[contains(@href, 'edit')]")
 	WebElement editBtn;
+	@FindBy(css = "button[class='btn btn-lg btn-block btn-danger']")
+	WebElement deleteBtn;
+	@FindBy(id = "btnYes")
+	WebElement yesBtn;
 	@FindBy(css = "div[role='alert']")
 	WebElement messageAlert;	
 	
@@ -36,6 +40,14 @@ public class AdminPage {
 	
 	public WebElement editBtn() {
 		return editBtn;
+	}
+	
+	public WebElement deleteBtn() {
+		return deleteBtn;
+	}
+	
+	public WebElement yesBtn() {
+		return yesBtn;
 	}
 	
 	public WebElement messageAlert() {

@@ -45,7 +45,6 @@ public class LoginTest extends Base {
 
 	@AfterMethod
 	public void AfMet() {
-		driver.close();
 		driver.quit();
 	}
 
