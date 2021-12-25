@@ -1,1 +1,2 @@
-11:21:41.268 [TestNG] INFO  resources.Base - Verified 'Success Login'
+11:51:35.662 [main] INFO  resources.Base - Verified 'Success Login'
+11:51:47.244 [main] INFO  resources.Base - Success Create Post alert is verified '×                                        Post created successfully!'

@@ -11,5 +11,11 @@
 			<class name="script.LoginTest" />
 		</classes>
 	</test>
+	
+	<test name="AdminPage">
+		<classes>
+			<class name="script.AdminTest" />
+		</classes>
+	</test>
 
 </suite> 
